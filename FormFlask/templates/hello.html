@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+{% if name %}
+<h2>Hello,{{name}}!</h2>
+{% else %}
+<h2>Hello,Guest</h2>
+{% end if %}
+<a href="{{url_for('index')}}">Go back</a>
+</body>
+</html>
